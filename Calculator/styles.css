@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background-color: #f7f8fc;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #e9ecef;
+}
+
+.btn:active {
+    background-color: #dee2e6;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #ffaf40;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #ff9f1c;
+}
+
+.operator:active {
+    background-color: #ff8c00;
+}
+
+.clear {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #ff4757;
+}
+
+.clear:active {
+    background-color: #ff3b3b;
+}
+
+.equal {
+    background-color: #1dd1a1;
+    color: white;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background-color: #10ac84;
+}
+
+.equal:active {
+    background-color: #0d8b6b;
+}
